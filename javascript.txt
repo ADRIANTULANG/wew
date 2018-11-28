@@ -1,0 +1,95 @@
+    <script type="text/javascript">
+
+      let n2 = 0;
+      var operator = "";
+      
+      function add(){
+      n2 = document.getElementById("num").value;
+      document.getElementById("num").value = "";
+      operator = "+";
+      }
+      function times(){
+      n2 = document.getElementById("num").value;
+      document.getElementById("num").value = "";
+      operator = "*";
+      }
+      function minus(){
+      n2 = document.getElementById("num").value;
+      document.getElementById("num").value = "";
+      operator = "-"; 
+      }
+      function divide(){
+      n2 = document.getElementById("num").value;
+      document.getElementById("num").value = "";
+      operator = "/";
+      }
+
+      function equals(){
+        let n1 = document.getElementById("num").value;
+        if (operator == "+"){
+            document.getElementById("num").value = parseInt(n1) + parseInt(n2);
+            operator = "";
+        }
+        if (operator == "-"){
+            document.getElementById("num").value = parseInt(n2) - parseInt(n1);
+            operator = "";
+        }
+        if (operator == "*"){
+            document.getElementById("num").value = parseInt(n2) * parseInt(n1);
+            operator = "";
+        }
+        if (operator == "/"){
+            document.getElementById("num").value = parseInt(n2) / parseInt(n1);
+            operator = "";
+      }
+      
+    }
+
+
+
+      
+
+     
+      
+      function one(){
+      document.getElementById("num").value += 1;
+      }
+      
+      function two(){
+        document.getElementById("num").value += 2;
+      }
+       function three(){
+        document.getElementById("num").value += 3;
+      }
+
+       function four(){
+        document.getElementById("num").value += 4;
+      }
+
+       function five(){
+        document.getElementById("num").value += 5;
+      }
+
+       function six(){
+        document.getElementById("num").value += 6;
+      }
+
+       function seven(){
+        document.getElementById("num").value += 7;
+      }
+
+       function eight(){
+        document.getElementById("num").value += 8;
+      }
+
+       function nine(){
+        document.getElementById("num").value += 9;
+      }
+      function zero(){
+        document.getElementById("num").value += 0;
+      }
+
+
+
+      
+    </script>
